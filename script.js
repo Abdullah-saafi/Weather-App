@@ -1,46 +1,46 @@
-// let welmsg = document.querySelector(".welmsg");
-// let welmsg1 = document.querySelector(".welmsg1");
-// let welmsg2 = document.querySelector(".welmsg2");
-// let body = document.querySelector(".bodyContent");
-// let userData = document.querySelector(".user");
-// console.log(welmsg1);
+let welmsg = document.querySelector(".welmsg");
+let welmsg1 = document.querySelector(".welmsg1");
+let welmsg2 = document.querySelector(".welmsg2");
+let body = document.querySelector(".bodyContent");
+let userData = document.querySelector(".user");
+console.log(welmsg1);
 
-// function showWel() {
-//   welmsg.style.visibility = "visible";
-//   welmsg1.style.display = "block";
-//   setTimeout(() => {
-//     welmsg1.style.display = "none";
-//     welmsg2.style.display = "block";
-//     setTimeout(() => {
-//       welmsg.style.display = "none";
-//       userData.style.display = "block";
-//     }, 5000);
-//   }, 4000);
-// }
+function showWel() {
+  welmsg.style.visibility = "visible";
+  welmsg1.style.display = "block";
+  setTimeout(() => {
+    welmsg1.style.display = "none";
+    welmsg2.style.display = "block";
+    setTimeout(() => {
+      welmsg.style.display = "none";
+      userData.style.display = "block";
+    }, 5000);
+  }, 4000);
+}
 
-// showWel();
+showWel();
 
-// let inputUserName = document.querySelector("#inputUserName");
-// let inputUserEmail = document.querySelector("#inputUserEmail");
-// let showUserName = document.querySelector(".showUserName");
-// let inputUsersubmit = document.querySelector("#inputUserSubmit");
-// let error = document.querySelector(".error");
-// inputUsersubmit.disabled = true;
+let inputUserName = document.querySelector("#inputUserName");
+let inputUserEmail = document.querySelector("#inputUserEmail");
+let showUserName = document.querySelector(".showUserName");
+let inputUsersubmit = document.querySelector("#inputUserSubmit");
+let error = document.querySelector(".error");
+inputUsersubmit.disabled = true;
 
-// inputUserName.addEventListener("input", function () {
-//   if (this.value.length > 8) {
-//     error.style.display = "none";
-//     inputUsersubmit.disabled = false;
-//     showUserName.textContent = "Hi, " + inputUserName.value;
-//   } else {
-//     error.style.display = "block";
-//     inputUsersubmit.disabled = true;
-//   }
-// });
-// function goHomePage() {
-//   body.style.display = "block";
-//   userData.style.display = "none";
-// }
+inputUserName.addEventListener("input", function () {
+  if (this.value.length > 8) {
+    error.style.display = "none";
+    inputUsersubmit.disabled = false;
+    showUserName.textContent = "Hi, " + inputUserName.value;
+  } else {
+    error.style.display = "block";
+    inputUsersubmit.disabled = true;
+  }
+});
+function goHomePage() {
+  body.style.display = "block";
+  userData.style.display = "none";
+}
 
 let searchCity = document.querySelector(".search input");
 let cityName = document.querySelector(".city h1");

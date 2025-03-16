@@ -64,7 +64,7 @@ sunnyweather.style.display = "none";
 
 async function checkWeather(city) {
   let apiKey = "835a6f12e0f04097be2160854251603";
-  let url = `http://api.weatherapi.com/v1/current.json?key=835a6f12e0f04097be2160854251603&q=${city}&aqi=no`;
+  let url = `https://api.weatherapi.com/v1/current.json?key=835a6f12e0f04097be2160854251603&q=${city}&aqi=no`;
   let weatherData = await fetch(`${url}`).then((response) => response.json());
   console.log(weatherData);
 
